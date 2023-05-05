@@ -4,9 +4,12 @@ if (result.error) {
   console.log(`Error loading env variables, aborting.`);
   process.exit(1);
 }
+import "reflect-metadata";
 import * as express from "express";
 import { root } from "./routes/root";
-import { isInteger } from "./utils";
+import { isInteger } from "./uitls/utils";
+import { logger } from "./uitls/logger";
+import { AppDataSource } from "./data-source";
 
 const app = express();
 
@@ -26,11 +29,19 @@ function startServer() {
     port = 9000;
   }
   app.listen(port, () => {
-    console.log(
+    logger.info(
       `HTTP V2 REST API server is now running on http://localhost:${port}`
     );
   });
 }
 
-setUpExpress();
-startServer();
+AppDataSource.initialize()
+  .then(() => {
+    logger.info(`Data Source Initialized Successfully`);
+    setUpExpress();
+    startServer();
+  })
+  .catch((err) => {
+    logger.error(`Error during dataSource initialization.`, err);
+    process.exit(1);
+  });
