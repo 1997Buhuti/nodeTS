@@ -1,0 +1,110 @@
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "containers-us-west-185.railway.app",
+    "level": "error",
+    "message": "Error during dataSource initialization. getaddrinfo ENOTFOUND containers-us-west-185.railway.app",
+    "stack": "Error: getaddrinfo ENOTFOUND containers-us-west-185.railway.app\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "code": "ENOTFOUND",
+    "errno": -3008,
+    "hostname": "containers-us-west-185.railway.app",
+    "level": "error",
+    "message": "Error during dataSource initialization. getaddrinfo ENOTFOUND containers-us-west-185.railway.app",
+    "stack": "Error: getaddrinfo ENOTFOUND containers-us-west-185.railway.app\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)",
+    "syscall": "getaddrinfo"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "code": "SELF_SIGNED_CERT_IN_CHAIN",
+    "level": "error",
+    "message": "Error during dataSource initialization. self-signed certificate in certificate chain",
+    "stack": "Error: self-signed certificate in certificate chain\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1538:34)\n    at TLSSocket.emit (node:events:513:28)\n    at TLSSocket._finishInit (node:_tls_wrap:952:8)\n    at ssl.onhandshakedone (node:_tls_wrap:733:12)"
+}
+{
+    "code": "SELF_SIGNED_CERT_IN_CHAIN",
+    "level": "error",
+    "message": "Error during dataSource initialization. self-signed certificate in certificate chain",
+    "stack": "Error: self-signed certificate in certificate chain\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1538:34)\n    at TLSSocket.emit (node:events:513:28)\n    at TLSSocket._finishInit (node:_tls_wrap:952:8)\n    at ssl.onhandshakedone (node:_tls_wrap:733:12)"
+}
+{
+    "code": "SELF_SIGNED_CERT_IN_CHAIN",
+    "level": "error",
+    "message": "Error during dataSource initialization. self-signed certificate in certificate chain",
+    "stack": "Error: self-signed certificate in certificate chain\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1538:34)\n    at TLSSocket.emit (node:events:513:28)\n    at TLSSocket._finishInit (node:_tls_wrap:952:8)\n    at ssl.onhandshakedone (node:_tls_wrap:733:12)"
+}
+{
+    "code": "SELF_SIGNED_CERT_IN_CHAIN",
+    "level": "error",
+    "message": "Error during dataSource initialization. self-signed certificate in certificate chain",
+    "stack": "Error: self-signed certificate in certificate chain\n    at TLSSocket.onConnectSecure (node:_tls_wrap:1538:34)\n    at TLSSocket.emit (node:events:513:28)\n    at TLSSocket._finishInit (node:_tls_wrap:952:8)\n    at ssl.onhandshakedone (node:_tls_wrap:733:12)"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
