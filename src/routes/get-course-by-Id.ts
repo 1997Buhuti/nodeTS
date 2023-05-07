@@ -3,24 +3,26 @@ import { logger } from "../uitls/logger";
 import { AppDataSource } from "../data/data-source";
 import { Course } from "../models/course.model";
 
-export const getAllCourses = async (
+export const getCourseByID = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   try {
-    logger.debug(`Called get all Courses endpoint`);
+    logger.debug(`Called get Course by Id endpoint`);
+    const courseUrl = req.params.courseUrl;
+
     const courseRepository = AppDataSource.getRepository(Course);
 
-    const courses = await courseRepository
-      .createQueryBuilder("courses")
-      .leftJoinAndSelect("courses.lessons", "LESSONS")
-      .orderBy("courses.seqNo")
-      .getMany();
+    const result = await courseRepository.findOneBy({
+      url: courseUrl,
+    });
 
-    res.status(200).json({ courses });
+    if (!courseUrl) {
+      throw `Could not extract course url`;
+    }
   } catch (err) {
-    logger.error(`Error Calling getAllCourses()`);
+    logger.error(`Error Calling getCourseByID()`);
     next(err);
   }
 };

@@ -18,6 +18,9 @@ export class Course {
   @Column()
   seqNo: number;
 
+  @Column({ nullable: true })
+  url: string;
+
   @Column()
   title: string;
 

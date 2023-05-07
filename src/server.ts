@@ -9,7 +9,7 @@ import express from "express";
 import { root } from "./routes/root";
 import { isInteger } from "./uitls/utils";
 import { logger } from "./uitls/logger";
-import { AppDataSource } from "./data-source";
+import { AppDataSource } from "./data/data-source";
 import { getAllCourses } from "./routes/get-all-courses";
 import { defaultErrorHandle } from "./middleware/default-error-handler";
 import cors from "cors";

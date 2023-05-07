@@ -228,3 +228,213 @@
     "level": "debug",
     "message": "Called get all Courses endpoint"
 }
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "code": "23502",
+    "column": "url",
+    "driverError": {
+        "code": "23502",
+        "column": "url",
+        "file": "tablecmds.c",
+        "length": 140,
+        "line": "5443",
+        "name": "error",
+        "routine": "ATRewriteTable",
+        "schema": "public",
+        "severity": "ERROR",
+        "table": "COURSES"
+    },
+    "file": "tablecmds.c",
+    "length": 140,
+    "level": "error",
+    "line": "5443",
+    "message": "Error during dataSource initialization. column \"url\" of relation \"COURSES\" contains null values",
+    "query": "ALTER TABLE \"COURSES\" ADD \"url\" character varying NOT NULL",
+    "routine": "ATRewriteTable",
+    "schema": "public",
+    "severity": "ERROR",
+    "stack": "QueryFailedError: column \"url\" of relation \"COURSES\" contains null values\n    at PostgresQueryRunner.query (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:211:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryRunner.executeQueries (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\query-runner\\BaseQueryRunner.js:424:13)\n    at async PostgresQueryRunner.addColumn (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:679:9)\n    at async PostgresQueryRunner.addColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:688:13)\n    at async RdbmsSchemaBuilder.addNewColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:554:13)\n    at async RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:168:9)\n    at async RdbmsSchemaBuilder.build (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:66:13)\n    at async DataSource.synchronize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:208:9)\n    at async DataSource.initialize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:153:17)",
+    "table": "COURSES"
+}
+{
+    "code": "23502",
+    "column": "url",
+    "driverError": {
+        "code": "23502",
+        "column": "url",
+        "file": "tablecmds.c",
+        "length": 140,
+        "line": "5443",
+        "name": "error",
+        "routine": "ATRewriteTable",
+        "schema": "public",
+        "severity": "ERROR",
+        "table": "COURSES"
+    },
+    "file": "tablecmds.c",
+    "length": 140,
+    "level": "error",
+    "line": "5443",
+    "message": "Error during dataSource initialization. column \"url\" of relation \"COURSES\" contains null values",
+    "query": "ALTER TABLE \"COURSES\" ADD \"url\" character varying NOT NULL",
+    "routine": "ATRewriteTable",
+    "schema": "public",
+    "severity": "ERROR",
+    "stack": "QueryFailedError: column \"url\" of relation \"COURSES\" contains null values\n    at PostgresQueryRunner.query (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:211:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryRunner.executeQueries (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\query-runner\\BaseQueryRunner.js:424:13)\n    at async PostgresQueryRunner.addColumn (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:679:9)\n    at async PostgresQueryRunner.addColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:688:13)\n    at async RdbmsSchemaBuilder.addNewColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:554:13)\n    at async RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:168:9)\n    at async RdbmsSchemaBuilder.build (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:66:13)\n    at async DataSource.synchronize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:208:9)\n    at async DataSource.initialize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:153:17)",
+    "table": "COURSES"
+}
+{
+    "code": "23502",
+    "column": "url",
+    "driverError": {
+        "code": "23502",
+        "column": "url",
+        "file": "tablecmds.c",
+        "length": 140,
+        "line": "5443",
+        "name": "error",
+        "routine": "ATRewriteTable",
+        "schema": "public",
+        "severity": "ERROR",
+        "table": "COURSES"
+    },
+    "file": "tablecmds.c",
+    "length": 140,
+    "level": "error",
+    "line": "5443",
+    "message": "Error during dataSource initialization. column \"url\" of relation \"COURSES\" contains null values",
+    "query": "ALTER TABLE \"COURSES\" ADD \"url\" character varying NOT NULL",
+    "routine": "ATRewriteTable",
+    "schema": "public",
+    "severity": "ERROR",
+    "stack": "QueryFailedError: column \"url\" of relation \"COURSES\" contains null values\n    at PostgresQueryRunner.query (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:211:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryRunner.executeQueries (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\query-runner\\BaseQueryRunner.js:424:13)\n    at async PostgresQueryRunner.addColumn (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:679:9)\n    at async PostgresQueryRunner.addColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:688:13)\n    at async RdbmsSchemaBuilder.addNewColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:554:13)\n    at async RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:168:9)\n    at async RdbmsSchemaBuilder.build (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:66:13)\n    at async DataSource.synchronize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:208:9)\n    at async DataSource.initialize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:153:17)",
+    "table": "COURSES"
+}
+{
+    "code": "23502",
+    "column": "url",
+    "driverError": {
+        "code": "23502",
+        "column": "url",
+        "file": "tablecmds.c",
+        "length": 140,
+        "line": "5443",
+        "name": "error",
+        "routine": "ATRewriteTable",
+        "schema": "public",
+        "severity": "ERROR",
+        "table": "COURSES"
+    },
+    "file": "tablecmds.c",
+    "length": 140,
+    "level": "error",
+    "line": "5443",
+    "message": "Error during dataSource initialization. column \"url\" of relation \"COURSES\" contains null values",
+    "query": "ALTER TABLE \"COURSES\" ADD \"url\" character varying NOT NULL",
+    "routine": "ATRewriteTable",
+    "schema": "public",
+    "severity": "ERROR",
+    "stack": "QueryFailedError: column \"url\" of relation \"COURSES\" contains null values\n    at PostgresQueryRunner.query (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:211:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryRunner.executeQueries (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\query-runner\\BaseQueryRunner.js:424:13)\n    at async PostgresQueryRunner.addColumn (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:679:9)\n    at async PostgresQueryRunner.addColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:688:13)\n    at async RdbmsSchemaBuilder.addNewColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:554:13)\n    at async RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:168:9)\n    at async RdbmsSchemaBuilder.build (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:66:13)\n    at async DataSource.synchronize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:208:9)\n    at async DataSource.initialize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:153:17)",
+    "table": "COURSES"
+}
+{
+    "code": "23502",
+    "column": "url",
+    "driverError": {
+        "code": "23502",
+        "column": "url",
+        "file": "tablecmds.c",
+        "length": 140,
+        "line": "5443",
+        "name": "error",
+        "routine": "ATRewriteTable",
+        "schema": "public",
+        "severity": "ERROR",
+        "table": "COURSES"
+    },
+    "file": "tablecmds.c",
+    "length": 140,
+    "level": "error",
+    "line": "5443",
+    "message": "Error during dataSource initialization. column \"url\" of relation \"COURSES\" contains null values",
+    "query": "ALTER TABLE \"COURSES\" ADD \"url\" character varying NOT NULL",
+    "routine": "ATRewriteTable",
+    "schema": "public",
+    "severity": "ERROR",
+    "stack": "QueryFailedError: column \"url\" of relation \"COURSES\" contains null values\n    at PostgresQueryRunner.query (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:211:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryRunner.executeQueries (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\query-runner\\BaseQueryRunner.js:424:13)\n    at async PostgresQueryRunner.addColumn (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:679:9)\n    at async PostgresQueryRunner.addColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:688:13)\n    at async RdbmsSchemaBuilder.addNewColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:554:13)\n    at async RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:168:9)\n    at async RdbmsSchemaBuilder.build (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:66:13)\n    at async DataSource.synchronize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:208:9)\n    at async DataSource.initialize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:153:17)",
+    "table": "COURSES"
+}
+{
+    "code": "23502",
+    "column": "url",
+    "driverError": {
+        "code": "23502",
+        "column": "url",
+        "file": "tablecmds.c",
+        "length": 140,
+        "line": "5443",
+        "name": "error",
+        "routine": "ATRewriteTable",
+        "schema": "public",
+        "severity": "ERROR",
+        "table": "COURSES"
+    },
+    "file": "tablecmds.c",
+    "length": 140,
+    "level": "error",
+    "line": "5443",
+    "message": "Error during dataSource initialization. column \"url\" of relation \"COURSES\" contains null values",
+    "query": "ALTER TABLE \"COURSES\" ADD \"url\" character varying NOT NULL",
+    "routine": "ATRewriteTable",
+    "schema": "public",
+    "severity": "ERROR",
+    "stack": "QueryFailedError: column \"url\" of relation \"COURSES\" contains null values\n    at PostgresQueryRunner.query (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:211:19)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async PostgresQueryRunner.executeQueries (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\query-runner\\BaseQueryRunner.js:424:13)\n    at async PostgresQueryRunner.addColumn (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:679:9)\n    at async PostgresQueryRunner.addColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\driver\\postgres\\PostgresQueryRunner.js:688:13)\n    at async RdbmsSchemaBuilder.addNewColumns (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:554:13)\n    at async RdbmsSchemaBuilder.executeSchemaSyncOperationsInProperOrder (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:168:9)\n    at async RdbmsSchemaBuilder.build (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\schema-builder\\RdbmsSchemaBuilder.js:66:13)\n    at async DataSource.synchronize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:208:9)\n    at async DataSource.initialize (C:\\TypeScript\\NodeProject\\node_modules\\typeorm\\data-source\\DataSource.js:153:17)",
+    "table": "COURSES"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
+{
+    "level": "info",
+    "message": "Data Source Initialized Successfully"
+}
+{
+    "level": "info",
+    "message": "HTTP V2 REST API server is now running on http://localhost:9003"
+}
