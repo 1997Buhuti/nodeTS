@@ -12,7 +12,7 @@ export const defaultErrorHandle = async (
   }
 
   res.status(500).json({
-    status: "Internal Server Error",
+    status: "500",
     message: `Internal Server Error`,
   });
 };
