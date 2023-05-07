@@ -10,11 +10,15 @@ import { root } from "./routes/root";
 import { isInteger } from "./uitls/utils";
 import { logger } from "./uitls/logger";
 import { AppDataSource } from "./data-source";
+import { getAllCourses } from "./routes/get-all-courses";
+import { defaultErrorHandle } from "./middleware/default-error-handler";
 
 const app = express();
 
 function setUpExpress() {
   app.route("/").get(root);
+  app.route("/courses").get(getAllCourses);
+  app.use(defaultErrorHandle);
 }
 
 function startServer() {
