@@ -5,16 +5,22 @@ if (result.error) {
   process.exit(1);
 }
 import "reflect-metadata";
-import * as express from "express";
+import express from "express";
 import { root } from "./routes/root";
 import { isInteger } from "./uitls/utils";
 import { logger } from "./uitls/logger";
 import { AppDataSource } from "./data-source";
+import { getAllCourses } from "./routes/get-all-courses";
+import { defaultErrorHandle } from "./middleware/default-error-handler";
+import cors from "cors";
 
 const app = express();
 
 function setUpExpress() {
+  app.use(cors());
   app.route("/").get(root);
+  app.route("/courses").get(getAllCourses);
+  app.use(defaultErrorHandle);
 }
 
 function startServer() {
