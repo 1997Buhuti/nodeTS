@@ -12,7 +12,11 @@
     "populate-db": "npm-run-all clean build run-populate-db-script",
     "run-populate-db-script": "node dist/models/populate-db.js",
     "delete-db": "npm-run-all clean build run-delete-db-script",
-    "run-delete-db-script": "node dist/models/delete-db.js"
+    "run-delete-db-script": "node dist/models/delete-db.js",
+    "db:migrate": "typeorm-ts-node-esm -d ./src/data/data-source.ts migration:generate -n",
+    "typeorm": "typeorm-ts-node-commonjs -d ./src/data/data-source.ts",
+    "generate-migration": "npm run typeorm migration:generate",
+    "run-migration": "npm run typeorm migration:run"
   },
   "author": "",
   "license": "ISC",
@@ -30,6 +34,7 @@
     "pg": "^8.10.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^5.0.0",
+    "ts-node": "^10.9.1",
     "typeorm": "^0.3.15",
     "winston": "^3.8.2"
   }

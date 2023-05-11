@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { logger } from "../uitls/logger";
-import { AppDataSource } from "../data-source";
+import { AppDataSource } from "../data/data-source";
 import { Course } from "../models/course.model";
 
 export const getAllCourses = async (

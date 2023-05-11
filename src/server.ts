@@ -9,10 +9,11 @@ import express from "express";
 import { root } from "./routes/root";
 import { isInteger } from "./uitls/utils";
 import { logger } from "./uitls/logger";
-import { AppDataSource } from "./data-source";
+import { AppDataSource } from "./data/data-source";
 import { getAllCourses } from "./routes/get-all-courses";
 import { defaultErrorHandle } from "./middleware/default-error-handler";
 import cors from "cors";
+import { getCourseByID } from "./routes/get-course-by-Id";
 
 const app = express();
 
@@ -20,6 +21,7 @@ function setUpExpress() {
   app.use(cors());
   app.route("/").get(root);
   app.route("/courses").get(getAllCourses);
+  app.route("/course/:courseId").get(getCourseByID);
   app.use(defaultErrorHandle);
 }
 
