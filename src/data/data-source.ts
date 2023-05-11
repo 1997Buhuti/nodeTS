@@ -1,6 +1,9 @@
 import { DataSource } from "typeorm";
 import { Lesson } from "../models/lesson.model";
 import { Course } from "../models/course.model";
+import * as dotenv from "dotenv";
+
+dotenv.config();
 
 export const AppDataSource = new DataSource({
   type: "postgres",
