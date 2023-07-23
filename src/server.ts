@@ -13,7 +13,9 @@ import { AppDataSource } from "./data/data-source";
 import { getAllCourses } from "./routes/get-all-courses";
 import { defaultErrorHandle } from "./middleware/default-error-handler";
 import cors from "cors";
-import { getCourseByID } from "./routes/get-course-by-Id";
+import { getCourseByUrl } from "./routes/get-course-by-Id";
+import { FindLessonsForCourse } from "./routes/find-lessons-for-course";
+// import { UpdateCourse } from "./routes/update-course";
 
 const app = express();
 
@@ -21,7 +23,9 @@ function setUpExpress() {
   app.use(cors());
   app.route("/").get(root);
   app.route("/courses").get(getAllCourses);
-  app.route("/course/:courseId").get(getCourseByID);
+  app.route("/course/:courseUrl").get(getCourseByUrl);
+  app.route("/courses/:courseId/lessons").get(FindLessonsForCourse);
+  // app.route("/courses/:courseId").put(UpdateCourse);
   app.use(defaultErrorHandle);
 }
 

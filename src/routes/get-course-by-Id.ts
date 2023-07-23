@@ -4,14 +4,14 @@ import { AppDataSource } from "../data/data-source";
 import { Course } from "../models/course.model";
 import { Lesson } from "../models/lesson.model";
 
-export const getCourseByID = async (
+export const getCourseByUrl = async (
   req: Request,
   res: Response,
   next: NextFunction
 ) => {
   try {
     logger.debug(`Called get Course by Id endpoint`);
-    const courseUrl = req.params.courseId;
+    const courseUrl = req.params.courseUrl;
 
     if (!courseUrl) {
       const message = `Could not extract course url ${courseUrl}`;
