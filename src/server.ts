@@ -15,17 +15,23 @@ import { defaultErrorHandle } from "./middleware/default-error-handler";
 import cors from "cors";
 import { getCourseByUrl } from "./routes/get-course-by-Id";
 import { FindLessonsForCourse } from "./routes/find-lessons-for-course";
-// import { UpdateCourse } from "./routes/update-course";
+import { UpdateCourse } from "./routes/update-course";
+import bodyParser from "body-parser";
+import { addCourse } from "./routes/add-course";
 
 const app = express();
 
 function setUpExpress() {
   app.use(cors());
+
+  app.use(bodyParser.json());
   app.route("/").get(root);
   app.route("/courses").get(getAllCourses);
   app.route("/course/:courseUrl").get(getCourseByUrl);
   app.route("/courses/:courseId/lessons").get(FindLessonsForCourse);
-  // app.route("/courses/:courseId").put(UpdateCourse);
+  app.route("/courses/:courseId").put(UpdateCourse);
+  app.route("/courses/:courseId").put(UpdateCourse);
+  app.route("/courses").post(addCourse);
   app.use(defaultErrorHandle);
 }
 
