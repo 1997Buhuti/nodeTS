@@ -15,7 +15,7 @@
     "run-delete-db-script": "node dist/models/delete-db.js",
     "db:migrate": "typeorm-ts-node-esm -d ./src/data/data-source.ts migration:generate -n",
     "typeorm": "typeorm-ts-node-commonjs -d ./src/data/data-source.ts",
-    "generate-migration": "npm run typeorm migration:generate",
+    "generate-migration": "npm run typeorm migration:generat",
     "run-migration": "npm run typeorm migration:run"
   },
   "author": "",
@@ -35,7 +35,8 @@
     "reflect-metadata": "^0.1.13",
     "rimraf": "^5.0.0",
     "ts-node": "^10.9.1",
-    "typeorm": "^0.3.15",
+    "typeorm": "^0.3.11",
+    "typeorm-extension": "^2.8.0",
     "winston": "^3.8.2"
   }
 }

@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES5",
+    "module": "commonjs",
+    "target": "es2017",
     "outDir": "dist",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

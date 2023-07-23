@@ -14,6 +14,7 @@ import { getAllCourses } from "./routes/get-all-courses";
 import { defaultErrorHandle } from "./middleware/default-error-handler";
 import cors from "cors";
 import { getCourseByID } from "./routes/get-course-by-Id";
+import { runSeeders } from "typeorm-extension";
 
 const app = express();
 
@@ -46,6 +47,10 @@ function startServer() {
 AppDataSource.initialize()
   .then(() => {
     logger.info(`Data Source Initialized Successfully`);
+    runSeeders(AppDataSource, {
+      seeds: ["src/database/seeds/**/*{.ts,.js}"],
+      factories: ["src/database/factories/**/*{.ts,.js}"],
+    });
     setUpExpress();
     startServer();
   })
@@ -53,3 +58,5 @@ AppDataSource.initialize()
     logger.error(`Error during dataSource initialization.`, err);
     process.exit(1);
   });
+
+//npm run typeorm migration:generate userChange
