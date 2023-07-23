@@ -17,6 +17,7 @@ import { getCourseByUrl } from "./routes/get-course-by-Id";
 import { FindLessonsForCourse } from "./routes/find-lessons-for-course";
 import { UpdateCourse } from "./routes/update-course";
 import bodyParser from "body-parser";
+import { addCourse } from "./routes/add-course";
 
 const app = express();
 
@@ -29,6 +30,8 @@ function setUpExpress() {
   app.route("/course/:courseUrl").get(getCourseByUrl);
   app.route("/courses/:courseId/lessons").get(FindLessonsForCourse);
   app.route("/courses/:courseId").put(UpdateCourse);
+  app.route("/courses/:courseId").put(UpdateCourse);
+  app.route("/courses").post(addCourse);
   app.use(defaultErrorHandle);
 }
 
