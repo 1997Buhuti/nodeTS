@@ -9,10 +9,13 @@ import express from "express";
 import { root } from "./routes/root";
 import { isInteger } from "./uitls/utils";
 import { logger } from "./uitls/logger";
-import { AppDataSource } from "./data-source";
+import { AppDataSource } from "./data/data-source";
 import { getAllCourses } from "./routes/get-all-courses";
 import { defaultErrorHandle } from "./middleware/default-error-handler";
 import cors from "cors";
+import { getCourseByUrl } from "./routes/get-course-by-Id";
+import { FindLessonsForCourse } from "./routes/find-lessons-for-course";
+// import { UpdateCourse } from "./routes/update-course";
 
 const app = express();
 
@@ -20,6 +23,9 @@ function setUpExpress() {
   app.use(cors());
   app.route("/").get(root);
   app.route("/courses").get(getAllCourses);
+  app.route("/course/:courseUrl").get(getCourseByUrl);
+  app.route("/courses/:courseId/lessons").get(FindLessonsForCourse);
+  // app.route("/courses/:courseId").put(UpdateCourse);
   app.use(defaultErrorHandle);
 }
 

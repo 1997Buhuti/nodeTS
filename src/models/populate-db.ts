@@ -2,7 +2,7 @@ import * as dotenv from "dotenv";
 
 const result = dotenv.config();
 import "reflect-metadata";
-import { AppDataSource } from "../data-source";
+import { AppDataSource } from "../data/data-source";
 import { COURSES } from "../data/db-data";
 import { DeepPartial } from "typeorm";
 import { Course } from "./course.model";
